@@ -1,5 +1,7 @@
 function sayHello (string) {
-  // your code here
+  it('returns "sayHello" when passed "Hello"', () => {
+    expect(sayHello('Hello')).toEqual('sayHello');
+  });
 };
 
 function uppercase (string) {
