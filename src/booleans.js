@@ -1,25 +1,37 @@
 function negate(a) {
-  // your code here
+return a = !a;
 };
 
 function both(a, b) {
-  // your code here
+  if (!a,b) {
+    return a && b;
+  } else {
+    return a && b;
+  }
 };
 
 function either(a, b) {
-  // your code here
+  if (!a,b) {
+    return a || b;
+  } else {
+    return a || b;
+  }
 };
 
 function none(a, b) {
-  // your code here
+  return !a && !b;
 };
 
 function one(a, b) {
-  // your code here
+  if (a && b) {
+    return !a || !b;
+  } else {
+    return a || b;
+  }
 };
 
-function truthiness(a) {
-  // your code here
+function truthiness(a) 
+
 };
 
 function isEqual(a, b) {
