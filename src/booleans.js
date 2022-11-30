@@ -22,36 +22,33 @@ function none(a, b) {
   return !a && !b;
 };
 
-function one(a, b) {
-  if (a && b) {
-    return !a || !b;
-  } else {
-    return a || b;
-  }
+function one(a, b)  {
+ return a !== b;
 };
 
-function truthiness(a) 
-
+function truthiness(a) {
+  const name = a;
+  return Boolean(name);
 };
 
 function isEqual(a, b) {
-  // your code here
+ return a === b;
 };
 
 function isGreaterThan(a, b) {
-  // your code here
+  return a > b;
 };
 
 function isLessThanOrEqualTo(a, b) {
-  // your code here
+  return a <= b;
 };
 
 function isOdd(a) {
-  // your code here
+ return a % 2 === 1;
 };
 
 function isEven(a) {
-  // your code here
+ return a % 2 === 0;
 };
 
 function isSquare(a) {
@@ -63,7 +60,7 @@ function startsWith(char, string) {
 };
 
 function containsVowels(string) {
-  // your code here
+ 
 };
 
 function isLowerCase(string) {
