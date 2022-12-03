@@ -52,22 +52,34 @@ function isEven(a) {
 };
 
 function isSquare(a) {
-  // your code here
-};
+
 
 function startsWith(char, string) {
-  // your code here
+  if (string.startsWith(char)) {
+    return true;
+  }
+    return false;
 };
 
 function containsVowels(string) {
- 
+ const vowels = 'aeiou';
+ const lowerCaseString = string.toLowerCase();
+ for (let i = 0; i < vowels.length; i++) {
+  if (lowerCaseString.includes(vowels[i])) {
+    return true;
+  }
+ }
+ return false;
 };
 
 function isLowerCase(string) {
-  // your code here
-};
+  if (string === string.toLowerCase()) {
+   return true;
+  }
+  return false;
+  };
 
-module.exports = {
+  module.exports = {
   negate,
   both,
   either,
@@ -83,4 +95,4 @@ module.exports = {
   startsWith,
   containsVowels,
   isLowerCase
-};
+  };

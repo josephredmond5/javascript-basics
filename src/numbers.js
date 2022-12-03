@@ -11,6 +11,7 @@ function subtract (a, b) {
 function multiply (a, b) {
   const result = a * b;
   return result;
+  
 }
 
 function divide (a, b) {
