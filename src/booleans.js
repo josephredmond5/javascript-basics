@@ -1,5 +1,5 @@
 function negate(a) {
-return a = !a;
+return !a;
 };
 
 function both(a, b) {
@@ -52,6 +52,9 @@ function isEven(a) {
 };
 
 function isSquare(a) {
+  return Math.sqrt(a)%1===0;
+}
+
 
 
 function startsWith(char, string) {
