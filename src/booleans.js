@@ -50,9 +50,12 @@ function isOdd(a) {
 function isEven(a) {
  return a % 2 === 0;
 };
-
-function isSquare(a) {
-  return Math.sqrt(a)%1===0;
+function isSquare(num) {
+  if (num < 0) {
+    return false;
+  }
+  const root = Math.sqrt(num);
+  return root === Math.floor(root);
 }
 
 
