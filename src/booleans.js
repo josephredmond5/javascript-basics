@@ -1,91 +1,69 @@
 function negate(a) {
-return !a;
+  return !a;
 };
 
 function both(a, b) {
-  if (!a,b) {
-    return a && b;
-  } else {
-    return a && b;
-  }
+  return a&&b;
 };
 
 function either(a, b) {
-  if (!a,b) {
-    return a || b;
-  } else {
-    return a || b;
-  }
+  return a||b;
 };
 
 function none(a, b) {
-  return !a && !b;
+  return !a&&!b;
 };
 
-function one(a, b)  {
- return a !== b;
+function one(a, b) {
+  return a!=b;
 };
 
 function truthiness(a) {
-  const name = a;
-  return Boolean(name);
+ return Boolean(a);
 };
 
 function isEqual(a, b) {
- return a === b;
+  return a===b;
 };
 
 function isGreaterThan(a, b) {
-  return a > b;
+  return a>b;
 };
 
 function isLessThanOrEqualTo(a, b) {
-  return a <= b;
+  return a<=b;
 };
 
 function isOdd(a) {
- return a % 2 === 1;
+  return a%2===1;
 };
 
 function isEven(a) {
- return a % 2 === 0;
+  return a%2===0;
 };
-function isSquare(num) {
-  if (num < 0) {
-    return false;
-  }
-  const root = Math.sqrt(num);
-  return root === Math.floor(root);
-}
 
-
+function isSquare(a) {
+  return Math.sqrt(a)%1===0;
+};
 
 function startsWith(char, string) {
-  if (string.startsWith(char)) {
-    return true;
-  }
-    return false;
+  return char=== string.charAt(0);
 };
 
 function containsVowels(string) {
- const vowels = 'aeiou';
- const lowerCaseString = string.toLowerCase();
- for (let i = 0; i < vowels.length; i++) {
-  if (lowerCaseString.includes(vowels[i])) {
-    return true;
-  }
- }
- return false;
+if (string.match(/[aeiou]/gi)){
+  return true;
+}
+
+return false;
+
 };
 
 function isLowerCase(string) {
-  if (string === string.toLowerCase()) {
-   return true;
-  }
-  return false;
-  };
+  return string === string.toLowerCase();
+};
 
-  module.exports = {
+module.exports = {
   negate,
   both,
   either,
@@ -101,4 +79,4 @@ function isLowerCase(string) {
   startsWith,
   containsVowels,
   isLowerCase
-  };
+};
